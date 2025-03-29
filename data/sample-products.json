@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Classic Blue Jeans",
+    "description": "High-quality denim blue jeans with a comfortable fit. Perfect for casual everyday wear.",
+    "price": 59.99,
+    "image": "https://res.cloudinary.com/sample/image/upload/v1629123456/products/blue-jeans.jpg",
+    "category": "jeans",
+    "isFeatured": true
+  },
+  {
+    "name": "White Cotton T-Shirt",
+    "description": "Premium cotton t-shirt that's soft, lightweight, and breathable. A wardrobe essential.",
+    "price": 24.99,
+    "image": "https://res.cloudinary.com/sample/image/upload/v1629123456/products/white-tshirt.jpg",
+    "category": "t-shirts",
+    "isFeatured": true
+  },
+  {
+    "name": "Running Sneakers",
+    "description": "Comfortable and durable running shoes with extra cushioning for support during exercise.",
+    "price": 89.99,
+    "image": "https://res.cloudinary.com/sample/image/upload/v1629123456/products/running-shoes.jpg",
+    "category": "shoes",
+    "isFeatured": true
+  },
+  {
+    "name": "Leather Jacket",
+    "description": "Classic leather jacket with a modern design. Water-resistant and perfect for cool weather.",
+    "price": 129.99,
+    "image": "https://res.cloudinary.com/sample/image/upload/v1629123456/products/leather-jacket.jpg",
+    "category": "jackets",
+    "isFeatured": false
+  },
+  {
+    "name": "Backpack",
+    "description": "Spacious backpack with laptop compartment and multiple pockets for organization.",
+    "price": 49.99,
+    "image": "https://res.cloudinary.com/sample/image/upload/v1629123456/products/backpack.jpg",
+    "category": "bags",
+    "isFeatured": false
+  }
+]
