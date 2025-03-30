@@ -1,0 +1,17 @@
+# Toaster :
+🔹 Toaster is coming from the react-hot-toast library, and it is used to display toast notifications in your React app.
+🔹 Toast notifications are small pop-up messages that appear temporarily to show feedback like success, error, or warning messages.
+The <Toaster /> component is included in your App.js, meaning that it is available throughout your entire application.
+Whenever you trigger a toast message, it will automatically be shown on the screen.
+
+
+# BrowserRouter
+<BrowserRouter> is part of React Router, a library used for handling navigation (URLs) in React apps.
+
+⚡ What Does BrowserRouter Do?
+✅ It enables client-side routing (changing pages without reloading).
+✅ It makes React listen to URL changes and load components accordingly.
+✅ It wraps your app so that routes work properly (<Route path="/" element={<Home />} />).
+
+# StrictMode
+runs the code twice but does not stop our code from running. It only shows warnings in the console.
