@@ -18,7 +18,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const__dirname = path.resolve();
+const __dirname = path.resolve();
 //console.log(process.env.PORT);
 
 // dev is used for development when server will be starting again and again on introducing some changes while start is used in production when server will not start again
