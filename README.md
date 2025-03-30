@@ -1,8 +1,10 @@
+<!-- Shatakshig19 -->
+
 # E-Commerce Platform
 
 A full-stack e-commerce application built with the MERN stack (MongoDB, Express, React, Node.js). This application offers a modern shopping experience with secure user authentication, product management, shopping cart functionality, payment processing, and analytics.
 
-![Project Banner](./screenshots/banner.png)
+![Project Banner](./screenshots/home.png)
 
 ## ✨ Features
 
@@ -23,33 +25,27 @@ A full-stack e-commerce application built with the MERN stack (MongoDB, Express,
 
 ### User Interface
 
-|                     Home Page                      |                            Product Listing                             |                          Product Details                           |
-| :------------------------------------------------: | :--------------------------------------------------------------------: | :----------------------------------------------------------------: |
-| ![Home Page](./screenshots/homepage/home-main.png) | ![Product Listing](./screenshots/products/product-listing-desktop.png) | ![Product Details](./screenshots/products/product-detail-view.png) |
+|              Home Page               |               Login Page               |               SignUp Page                |
+| :----------------------------------: | :------------------------------------: | :--------------------------------------: |
+| ![Home Page](./screenshots/home.png) | ![Login Page](./screenshots/Login.png) | ![SignUp Page](./screenshots/SignUp.png) |
 
 ### Shopping Experience
 
-|                    Shopping Cart                     |                         Checkout                         |                        Purchase Success                         |
-| :--------------------------------------------------: | :------------------------------------------------------: | :-------------------------------------------------------------: |
-| ![Shopping Cart](./screenshots/cart/cart-filled.png) | ![Checkout](./screenshots/checkout/checkout-payment.png) | ![Purchase Success](./screenshots/payment/purchase-success.png) |
+|                  Search Filter                   |              Cart               |                   Product Filters                    |
+| :----------------------------------------------: | :-----------------------------: | :--------------------------------------------------: |
+| ![Search Filter](./screenshots/SearchFilter.png) | ![Cart](./screenshots/Cart.png) | ![Purchase Success](./screenshots/ProductFilter.png) |
 
-### User Account
+### Special Sections
 
-|                     Login                      |                       Registration                       |                       User Dashboard                        |
-| :--------------------------------------------: | :------------------------------------------------------: | :---------------------------------------------------------: |
-| ![Login](./screenshots/account/login-form.png) | ![Registration](./screenshots/account/register-form.png) | ![User Dashboard](./screenshots/account/user-dashboard.png) |
+|                    People Also Bought                     |                    Featured Products                    |
+| :-------------------------------------------------------: | :-----------------------------------------------------: |
+| ![People Also Bought](./screenshots/peopleAlsoBought.png) | ![Featured Products](./screenshots/FeaturedProduct.png) |
 
 ### Admin Features
 
-|                       Admin Dashboard                       |                        Analytics                         |                        Product Management                         |
-| :---------------------------------------------------------: | :------------------------------------------------------: | :---------------------------------------------------------------: |
-| ![Admin Dashboard](./screenshots/admin/admin-dashboard.png) | ![Analytics](./screenshots/admin/analytics-overview.png) | ![Product Management](./screenshots/admin/product-management.png) |
-
-### Mobile Experience
-
-|                     Mobile Home                      |                     Mobile Cart                      |                       Mobile Checkout                        |
-| :--------------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------------: |
-| ![Mobile Home](./screenshots/mobile/home-mobile.png) | ![Mobile Cart](./screenshots/mobile/cart-mobile.png) | ![Mobile Checkout](./screenshots/mobile/checkout-mobile.png) |
+|                 Admin Dashboard                 |                   Analytics                   |                   Create Product                   |
+| :---------------------------------------------: | :-------------------------------------------: | :------------------------------------------------: |
+| ![Admin Dashboard](./screenshots/Dashboard.png) | ![Analytics](./screenshots/analyticsData.png) | ![Create Product](./screenshots/CreateProduct.png) |
 
 </details>
 
@@ -90,7 +86,7 @@ Before you begin, ensure you have the following installed:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/e-commerce.git
+git clone https://github.com/Shatakshig19/E-commerce.git
 cd e-commerce
 ```
 
