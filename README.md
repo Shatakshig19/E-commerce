@@ -4,7 +4,7 @@
 
 A full-stack e-commerce application built with the MERN stack (MongoDB, Express, React, Node.js). This application offers a modern shopping experience with secure user authentication, product management, shopping cart functionality, payment processing, and analytics.
 
-![Project Banner](./screenshots/home.png)
+![Project Banner](./screenshots/Home.png)
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@ A full-stack e-commerce application built with the MERN stack (MongoDB, Express,
 
 |              Home Page               |               Login Page               |               SignUp Page                |
 | :----------------------------------: | :------------------------------------: | :--------------------------------------: |
-| ![Home Page](./screenshots/home.png) | ![Login Page](./screenshots/Login.png) | ![SignUp Page](./screenshots/SignUp.png) |
+| ![Home Page](./screenshots/Home.png) | ![Login Page](./screenshots/Login.png) | ![SignUp Page](./screenshots/SignUp.png) |
 
 ### Shopping Experience
 
