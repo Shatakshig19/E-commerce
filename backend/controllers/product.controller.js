@@ -173,3 +173,96 @@ const updateFeaturedProductsCache = async () => {
     console.log("error in updateFeaturedProductsCache", error.message);
   }
 };
+
+export const getAllProductsWithFilters = async (req, res) => {
+  try {
+    const { category, minPrice, maxPrice, sort, search } = req.query;
+
+    // Build filter object
+    const filter = {};
+
+    // Add category filter if provided
+    if (category && category !== "all") {
+      filter.category = category;
+    }
+
+    // Add price range filter if provided
+    if (minPrice || maxPrice) {
+      filter.price = {};
+      if (minPrice) filter.price.$gte = parseFloat(minPrice);
+      if (maxPrice) filter.price.$lte = parseFloat(maxPrice);
+    }
+
+    // Add search filter if provided
+    if (search) {
+      filter.$or = [
+        { name: { $regex: search, $options: "i" } },
+        { description: { $regex: search, $options: "i" } },
+      ];
+    }
+
+    // Determine sort order
+    let sortOption = {};
+    if (sort === "price-asc") {
+      sortOption = { price: 1 };
+    } else if (sort === "price-desc") {
+      sortOption = { price: -1 };
+    } else if (sort === "newest") {
+      sortOption = { createdAt: -1 };
+    } else if (sort === "oldest") {
+      sortOption = { createdAt: 1 };
+    } else {
+      // Default sort by newest
+      sortOption = { createdAt: -1 };
+    }
+
+    const products = await Product.find(filter).sort(sortOption);
+
+    res.json({
+      products,
+      totalCount: products.length,
+      filters: {
+        category: category || "all",
+        minPrice: minPrice || "",
+        maxPrice: maxPrice || "",
+        sort: sort || "newest",
+        search: search || "",
+      },
+    });
+  } catch (error) {
+    console.log("Error in getAllProductsWithFilters controller", error.message);
+    res.status(500).json({ message: "Server error", error: error.message });
+  }
+};
+
+export const getCategories = async (req, res) => {
+  try {
+    // Get distinct categories
+    const categories = await Product.distinct("category");
+    res.json(categories);
+  } catch (error) {
+    console.log("Error in getCategories controller", error.message);
+    res.status(500).json({ message: "Server error", error: error.message });
+  }
+};
+
+export const getPriceRange = async (req, res) => {
+  try {
+    const minPrice = await Product.find()
+      .sort({ price: 1 })
+      .limit(1)
+      .select("price");
+    const maxPrice = await Product.find()
+      .sort({ price: -1 })
+      .limit(1)
+      .select("price");
+
+    res.json({
+      min: minPrice.length > 0 ? minPrice[0].price : 0,
+      max: maxPrice.length > 0 ? maxPrice[0].price : 1000,
+    });
+  } catch (error) {
+    console.log("Error in getPriceRange controller", error.message);
+    res.status(500).json({ message: "Server error", error: error.message });
+  }
+};
