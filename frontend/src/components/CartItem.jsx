@@ -1,9 +1,8 @@
-import React from 'react'
-import { useCartStore } from '../stores/useCartStore'
-import {Minus,Plus,Trash} from 'lucide-react'
+import React from "react";
+import { useCartStore } from "../stores/useCartStore";
+import { Minus, Plus, Trash } from "lucide-react";
 
-function CartItem({item}) {
-
+function CartItem({ item }) {
   const { removeAllFromCart, updateQuantity } = useCartStore();
 
   return (
@@ -35,7 +34,7 @@ function CartItem({item}) {
             </button>
           </div>
           <div className="text-end md:order-4 md:w-32">
-            <p className="text-2xl font-bold text-emerald-400">{item.price}</p>
+            <p className="text-2xl font-bold text-emerald-400">₹{item.price}</p>
           </div>
         </div>
 
@@ -59,4 +58,4 @@ function CartItem({item}) {
   );
 }
 
-export default CartItem
+export default CartItem;
