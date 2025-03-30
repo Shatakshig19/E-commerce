@@ -21,25 +21,35 @@ A full-stack e-commerce application built with the MERN stack (MongoDB, Express,
 <details>
 <summary>Click to view screenshots</summary>
 
-### Home Page
+### User Interface
 
-![Home Page](./screenshots/home.png)
+|                     Home Page                      |                            Product Listing                             |                          Product Details                           |
+| :------------------------------------------------: | :--------------------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![Home Page](./screenshots/homepage/home-main.png) | ![Product Listing](./screenshots/products/product-listing-desktop.png) | ![Product Details](./screenshots/products/product-detail-view.png) |
 
-### Product Listing
+### Shopping Experience
 
-![Product Listing](./screenshots/products.png)
+|                    Shopping Cart                     |                         Checkout                         |                        Purchase Success                         |
+| :--------------------------------------------------: | :------------------------------------------------------: | :-------------------------------------------------------------: |
+| ![Shopping Cart](./screenshots/cart/cart-filled.png) | ![Checkout](./screenshots/checkout/checkout-payment.png) | ![Purchase Success](./screenshots/payment/purchase-success.png) |
 
-### Shopping Cart
+### User Account
 
-![Shopping Cart](./screenshots/cart.png)
+|                     Login                      |                       Registration                       |                       User Dashboard                        |
+| :--------------------------------------------: | :------------------------------------------------------: | :---------------------------------------------------------: |
+| ![Login](./screenshots/account/login-form.png) | ![Registration](./screenshots/account/register-form.png) | ![User Dashboard](./screenshots/account/user-dashboard.png) |
 
-### Checkout Process
+### Admin Features
 
-![Checkout](./screenshots/checkout.png)
+|                       Admin Dashboard                       |                        Analytics                         |                        Product Management                         |
+| :---------------------------------------------------------: | :------------------------------------------------------: | :---------------------------------------------------------------: |
+| ![Admin Dashboard](./screenshots/admin/admin-dashboard.png) | ![Analytics](./screenshots/admin/analytics-overview.png) | ![Product Management](./screenshots/admin/product-management.png) |
 
-### Admin Dashboard
+### Mobile Experience
 
-![Admin Dashboard](./screenshots/admin.png)
+|                     Mobile Home                      |                     Mobile Cart                      |                       Mobile Checkout                        |
+| :--------------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------------: |
+| ![Mobile Home](./screenshots/mobile/home-mobile.png) | ![Mobile Cart](./screenshots/mobile/cart-mobile.png) | ![Mobile Checkout](./screenshots/mobile/checkout-mobile.png) |
 
 </details>
 
